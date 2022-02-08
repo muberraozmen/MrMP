@@ -1,13 +1,18 @@
 # MrMP
 This repository contains a PyTorch implementation of our ICASSP 2022 paper [Multi-relation Message Passing for Multi-label Text Classification](https://arxiv.org).
 
-<img align="center"  src="/figures/model.pdf" alt="...">
+![image info](./figures/model.png)
 
 #### Requirements
-- Python 3.6
-- PyTorch 1.10
-- Numpy 1.19.1
-- tqdm 4.62.3
+```
+- python~=3.8
+- torch~=1.10
+- numpy~=1.21.2
+- tqdm~=4.62.3
+- scipy~=1.7.3
+- pandas~=1.3.5
+- scikit-learn~=1.0.2
+```
 
 #### Usage
 1. install the required packages and their dependencies, if your environment does not have them already
