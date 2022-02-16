@@ -1,5 +1,5 @@
 # MrMP
-This repository contains a PyTorch implementation of our ICASSP 2022 paper [Multi-relation Message Passing for Multi-label Text Classification](https://arxiv.org).
+This repository contains a PyTorch implementation of our ICASSP 2022 paper [Multi-relation Message Passing for Multi-label Text Classification](https://arxiv.org/submit/4156521/view).
 
 ![image info](./figures/model.png)
 
