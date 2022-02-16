@@ -15,3 +15,4 @@ elif [[ $SLURM_ARRAY_TASK_ID -eq 2 ]]; then
   name=mrmp
   mrmp_on=$true
   python3.8 -u main.py -dataset $dataset -name $name -mrmp_on $mrmp_on
+fi
