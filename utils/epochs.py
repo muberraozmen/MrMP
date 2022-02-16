@@ -23,7 +23,7 @@ def train_epoch(model, train_data, optimizer):
         pred, mrmp_output = model(src_seq)
         norm_pred = torch.sigmoid(pred)
 
-        tgt_binary = seq2bin(tgt_seq, pred.size(1))
+        tgt_binary = seq2bin(tgt_seq, pred.size(1)).to(pred.device)
         loss, bce = model.loss_fn(pred, tgt_binary, mrmp_output)
 
         # backward and update parameters
@@ -64,7 +64,7 @@ def eval_epoch(model, eval_data):
             pred, mrmp_output = model(src_seq)
             norm_pred = torch.sigmoid(pred)
 
-            tgt_binary = seq2bin(tgt_seq, pred.size(1))
+            tgt_binary = seq2bin(tgt_seq, pred.size(1)).to(pred.device)
             loss, bce = model.loss_fn(pred, tgt_binary, mrmp_output)
 
             # note keeping

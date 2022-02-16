@@ -67,7 +67,6 @@ class DataIterator(object):
 
             if self.cuda_on:
                 src_insts = src_insts.cuda()
-                tgt_insts = tgt_insts.cuda()
 
             return src_insts, tgt_insts
 

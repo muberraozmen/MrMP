@@ -34,7 +34,7 @@ def run(model, train_data, valid_data, test_data, optimizer, scheduler, opt):
             scheduler.step()
 
         # ======================= TRAINING ======================= #
-        train_predictions, train_targets, train_totals, bgi_inputs = train_epoch(model, train_data, optimizer)
+        train_predictions, train_targets, train_totals = train_epoch(model, train_data, optimizer)
         train_metrics_epoch, train_tau = compute_metrics(train_predictions, train_targets, train_totals)
         train_metrics.append(train_metrics_epoch)
 
